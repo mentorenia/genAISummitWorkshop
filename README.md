@@ -17,7 +17,7 @@ Nexus Agent es una implementación de referencia que resuelve estos problemas me
 
 Este repositorio sigue una arquitectura hexagonal simplificada para separar la infraestructura, el dominio y las interfaces.
 
-nexus-agent/
+``nexus-agent/
 ├── 📂 .devcontainer/       # Configuración para GitHub Codespaces (Entorno Efímero)
 ├── 📂 data/                # SIMULACIÓN DEL ENTORNO CORPORATIVO
 │   ├── crm.db              # SQLite simulando un CRM Enterprise
@@ -47,6 +47,7 @@ nexus-agent/
 ├── .env.example            # Plantilla de variables de entorno
 ├── requirements.txt        # Dependencias congeladas
 └── README.md               # Este documento
+``
 
 ## Stack Tecnológico
 
