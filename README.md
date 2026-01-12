@@ -1,23 +1,38 @@
-# genAISummitWorkshop - Arquitectura de Agentes Auditables en Producción
-Workshop Oficial - GenAI Summit 2026 De la "magia" del prompt a la disciplina de la ingeniería de software.
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)
+![MCP](https://img.shields.io/badge/Protocol-MCP-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Grade-green?style=for-the-badge)
+
+> **Workshop Oficial - GenAI Summit 2026**
+>
+> * Nexus Agent: Arquitectura de Agentes Auditables en Producción*
+
+---
 
 ## 📖 Propósito del Proyecto
-La mayoría de los agentes de IA fallan en producción por tres razones: 
-- Indeterminismo (respuestas impredecibles)
-- Costes descontrolados (bucles infinitos)
-- Opacidad (cajas negras inauditables).
 
-Nexus Agent es una implementación de referencia que resuelve estos problemas mediante un enfoque de Defensa en Profundidad
-1. Validación estricta mediante el uso de Pydantic para garantizar contratos de datos a la entrada y salida.
-2. Creación de un estándar de herramientas mediante la implementación de un Model Context Protocol (MCP) para desacoplar la lógica del LLM de las integraciones (CRM, Docs).
-3. Gobernanza  conseguida mediante un orquestador con presupuesto financiero (€) en tiempo real y logs de auditoría estructurados.
-4. Containerización con Docker para despliegue serverless (Cloud Run).
+La mayoría de los agentes de IA fallan en producción por tres razones:
+* ❌ **Indeterminismo:** Respuestas impredecibles o alucinaciones.
+* ❌ **Costes descontrolados:** Bucles infinitos que queman presupuesto.
+* ❌ **Opacidad:** Cajas negras inauditables para negocio o legal.
 
-## 🏗️ Estructura del Proyecto
+**Nexus Agent** es una implementación de referencia que resuelve estos problemas mediante un enfoque de **Defensa en Profundidad**:
+
+1.  **Validación Estricta:** Uso de `Pydantic` para garantizar contratos de datos a la entrada y salida.
+2.  **Estándar de Herramientas:** Implementación del **Model Context Protocol (MCP)** para desacoplar la lógica del LLM de las integraciones (CRM, Docs).
+3.  **Gobernanza Financiera:** Un orquestador con presupuesto (€) en tiempo real y logs de auditoría estructurados.
+4.  **Despliegue Inmutable:** Containerización con Docker para despliegue serverless (Cloud Run).
+
+
+
+---
+
+## Estructura del Proyecto
 
 Este repositorio sigue una arquitectura hexagonal simplificada para separar la infraestructura, el dominio y las interfaces.
 
-``nexus-agent/
+```text
+nexus-agent/
 ├── 📂 .devcontainer/       # Configuración para GitHub Codespaces (Entorno Efímero)
 ├── 📂 data/                # SIMULACIÓN DEL ENTORNO CORPORATIVO
 │   ├── crm.db              # SQLite simulando un CRM Enterprise
@@ -47,7 +62,7 @@ Este repositorio sigue una arquitectura hexagonal simplificada para separar la i
 ├── .env.example            # Plantilla de variables de entorno
 ├── requirements.txt        # Dependencias congeladas
 └── README.md               # Este documento
-``
+```
 
 ## Stack Tecnológico
 
@@ -67,8 +82,8 @@ Este repositorio sigue una arquitectura hexagonal simplificada para separar la i
 ## Instalación 
 
 1. Clonar el repositorio
-``git clone https://github.com/tu-usuario/nexus-agent.git
-cd nexus-agent``
+``git clone https://github.com/mentorenia/genAISummitWorkshop.git
+cd genAISummirWorkshop``
 
 2. Crear entorno virtual 
 ``python -m venv venv
@@ -104,7 +119,7 @@ Esto lanzará un prompt interactivo donde podrás enviar emails simulados y ver 
 
 ### Fase 2: Ejecución API (Modo producción)
 Para levantar el servidor FastAPI
-``uvicorn src.main:app --reload``
+* ``uvicorn src.main:app --reload``
 Accede a la documentación automática en: 
 ``http://localhost:8000/docs``
 
