@@ -20,7 +20,7 @@ La mayoría de los agentes de IA fallan en producción por tres razones:
 | ❌ **Costes descontrolados** | Bucles infinitos que queman presupuesto |
 | ❌ **Opacidad** | Cajas negras inauditables para negocio o legal |
 
-La metoología presentada en este taller resuelve estos problemas mediante un enfoque de **Defensa en Profundidad**:
+La metodología presentada en este taller resuelve estos problemas mediante un enfoque de **Defensa en Profundidad**:
 
 1. **Validación Estricta** — Uso de `Pydantic` para garantizar contratos de datos en entrada y salida
 2. **Estándar de Herramientas** — Implementación del **Model Context Protocol (MCP)** para desacoplar la lógica del LLM de las integraciones
