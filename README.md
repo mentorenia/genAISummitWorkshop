@@ -34,7 +34,7 @@ La metoología presentada en este taller resuelve estos problemas mediante un en
 Arquitectura hexagonal simplificada para separar infraestructura, dominio e interfaces.
 
 ```
-nexus-agent/
+agente/
 │
 ├── .devcontainer/          # Configuración para GitHub Codespaces
 │
